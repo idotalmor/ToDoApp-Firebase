@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#13A0F7"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/todo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/loginLinearLayout"/>
+
+    <LinearLayout
+        android:id="@+id/loginLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="60dp">
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginBottom="7dp"
+            android:textSize="17sp"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginBottom="7dp"
+            android:textSize="17sp"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Login"
+            android:background="@drawable/button_selector"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="7dp"
+            android:onClick="LoginBtn"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No account yet? Create one"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:onClick="SignupIntent"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ToDoFirebase</string>
+    <string name="facebook_app_id">2003681993021374</string>
+    <string name="fb_login_protocol_scheme">fb2003681993021374</string>
+</resources>
